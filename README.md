@@ -1,4 +1,3 @@
-# salesforce-bdd
 Salesforce BDD search test.
 Before running
 1. Salesforce username and password need to be added in the src/test/java/com/salesforce/bdd/settings/Credentials.java
