@@ -37,9 +37,6 @@ public class HomePage extends BasePage {
     private WebElement searchButton;
 
 
-    /**
-     * Login to Salesforce
-     */
     public void login() {
         loginButton.click();
         loginPage.login();
@@ -47,9 +44,6 @@ public class HomePage extends BasePage {
         Assert.assertTrue(getTitle().contains("Salesforce Developers"));
     }
 
-    /**
-     * Logout from Salesforce
-     */
     public void logout() {
         loginButton.click();
         logoutButton.click();
@@ -58,10 +52,6 @@ public class HomePage extends BasePage {
         TestSettings.driver.close();
     }
 
-    /**
-     * 
-     * @param str
-     */
     public void search(String str) {
         wait.until(ExpectedConditions.visibilityOf(searchField)).click();
         searchField.sendKeys(str);

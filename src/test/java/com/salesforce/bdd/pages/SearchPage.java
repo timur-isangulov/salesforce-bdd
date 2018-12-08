@@ -47,6 +47,10 @@ public class SearchPage extends BasePage {
         return "";
     }
 
+    /**
+     * Maps titles and urls on the search page.
+     * @return
+     */
     public Map<String, String> getResultSet() {
         waitForTitle("Search");
         Map<String, String> links = new HashMap<>();
@@ -57,6 +61,10 @@ public class SearchPage extends BasePage {
         return links;
     }
 
+    /**
+     * Verifies links from the search page by opening each of the and comparing actual title with the title from the map.
+     * @param map
+     */
     public void verifyLinks(Map<String, String> map) {
         for (Map.Entry<String, String> entry : map.entrySet()) {
             TestSettings.driver.get(entry.getValue());

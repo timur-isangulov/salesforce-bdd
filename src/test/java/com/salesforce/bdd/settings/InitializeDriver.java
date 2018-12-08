@@ -57,6 +57,7 @@ public class InitializeDriver {
     }
 
     private void tearDownDriver( ) {
+        TestSettings.driver.quit();
         if (TestSettings.driver != null)
             TestSettings.driver = null;
     }
