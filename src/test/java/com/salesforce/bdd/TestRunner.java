@@ -9,8 +9,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(features = {"src/test/resources/featurefile"}, glue = {
         "com/salesforce/bdd/steps",
-        "com/salesforce/bdd/settings"}, plugin = {"pretty",
-        "json:target/SearchFeatureRunner.json"})
+        "com/salesforce/bdd/settings"})
 public class TestRunner extends AbstractTestNGCucumberTests {
 
 }
