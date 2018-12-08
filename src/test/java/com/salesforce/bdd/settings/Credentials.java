@@ -4,8 +4,8 @@ package com.salesforce.bdd.settings;
  * @author Timur Isangulov
  */
 public class Credentials {
-    private static final String USERNAME = "timur.isangulov@esi-group.com";
-    private static final String PASSWORD = "Mineset12345";
+    private static final String USERNAME = "";
+    private static final String PASSWORD = "";
 
     public static String getUsername() {
         return USERNAME;
